@@ -2,8 +2,6 @@ package com.lee.java8.streams;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Stream;
 
 /**
  * @author WangLe
