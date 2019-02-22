@@ -2,6 +2,7 @@ package com.lee.java8.streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -10,7 +11,7 @@ import java.util.stream.Stream;
  * @date 2019/2/21 16:45
  * @description
  */
-public class MapInStream {
+public class MapAndReduceInStream {
     public static void main(String[] args) {
         Integer[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         Stream<Integer> stream = Arrays.stream(nums);
@@ -23,6 +24,11 @@ public class MapInStream {
         Stream<String[]> stream1 = stringStream.map(s -> s.split(""));
         Stream<String> stringStream1 = stream1.flatMap(strings1 -> Arrays.stream(strings1).distinct());
         stringStream1.forEach(System.out::println);
+
+        System.out.println("====================");
+        // 求和的方法
+        Integer reduce = Arrays.stream(nums).reduce(0, (a, b) -> a + b);
+        System.out.println(reduce);
 
     }
 }
