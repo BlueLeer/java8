@@ -7,6 +7,6 @@ package com.lee.java8;
  */
 public class Git2 {
     public static void main(String[] args) {
-        System.out.println("是金佛阿斯加防冻年少");
+        System.out.println("哈哈哈哈");
     }
 }
