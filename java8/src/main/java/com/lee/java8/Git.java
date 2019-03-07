@@ -6,4 +6,8 @@ package com.lee.java8;
  * @description
  */
 public class Git {
+    public static void main(String[] args) {
+
+    }
 }
+
